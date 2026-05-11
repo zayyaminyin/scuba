@@ -65,6 +65,26 @@
     -webkit-text-stroke: 2px hsl(var(--foreground));
     color: transparent;
   }
+
+  .bg-tech-grid {
+    background-image:
+      linear-gradient(hsl(var(--foreground) / 0.04) 1px, transparent 1px),
+      linear-gradient(90deg, hsl(var(--foreground) / 0.04) 1px, transparent 1px);
+    background-size: 72px 72px;
+  }
+
+  .bg-radial-glow {
+    background-image: radial-gradient(ellipse 80% 50% at 50% -20%, hsl(var(--accent) / 0.12), transparent 55%);
+  }
+
+  .fade-up-delay-1 { animation-delay: 120ms; }
+  .fade-up-delay-2 { animation-delay: 240ms; }
+  .fade-up-delay-3 { animation-delay: 360ms; }
+  .fade-up-delay-4 { animation-delay: 480ms; }
+
+  .mask-fade-x {
+    mask-image: linear-gradient(90deg, transparent, black 8%, black 92%, transparent);
+  }
 }
 
 @keyframes fade-up {
